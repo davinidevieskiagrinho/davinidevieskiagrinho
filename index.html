@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Eólica</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9ff;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #4facfe, #00c6fb);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Menu */
+        nav {
+            background-color: #0077b6;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #caf0f8;
+        }
+
+        /* Banner */
+        .hero {
+            height: 70vh;
+            background: url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1400&q=80')
+            center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-text {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-text button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            background-color: #00b4d8;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .hero-text button:hover {
+            background-color: #0096c7;
+        }
+
+        /* Conteúdo */
+        .content {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 40px 10%;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #0096c7;
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌬️ Energia Eólica</h1>
+        <p>Uma fonte limpa e sustentável para o futuro.</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#funcionamento">Funcionamento</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>O Poder dos Ventos</h2>
+            <p>
+                A energia eólica transforma a força do vento em eletricidade,
+                contribuindo para um planeta mais sustentável.
+            </p>
+            <button>Saiba Mais</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="content">
+        <h2>O que é Energia Eólica?</h2>
+        <p>
+            Energia eólica é a energia obtida através da força dos ventos.
+            Ela é captada por aerogeradores que convertem a energia cinética
+            do vento em energia elétrica.
+        </p>
+    </section>
+
+    <section id="beneficios" class="cards">
+        <div class="card">
+            <h3>🌱 Sustentável</h3>
+            <p>Fonte renovável que não produz gases poluentes.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Eficiente</h3>
+            <p>Produz eletricidade de forma limpa e econômica.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Ambiental</h3>
+            <p>Ajuda na redução das emissões de carbono.</p>
+        </div>
+    </section>
+
+    <section id="funcionamento" class="content">
+        <h2>Como Funciona?</h2>
+        <p>
+            As pás dos aerogeradores giram com a força do vento. Esse movimento
+            aciona um gerador que transforma energia mecânica em energia elétrica,
+            distribuída para residências e empresas.
+        </p>
+    </section>
+
+    <footer id="contato">
+        <p>Projeto Educacional sobre Energia Eólica © 2026</p>
+    </footer>
+
+</body>
+</html>
